@@ -53,14 +53,14 @@ def bspec_bot():
         bot.add_driver(bot.profile['id'], my_drivers[0]['driver_id'])
 
         # @todo: ADD FRIEND DRIVER
-        #logger.debug('Add entry: %s' % friend_drivers[0]['driver_id'])
+        #logger.info('Add entry: %s' % friend_drivers[0]['driver_id'])
         #bot.add_driver(friend_name, friend_drivers[0]['driver_id'])
 
-        logger.debug('Go race !')
+        logger.info('Go race !')
         bot.start_race()
 
         # XXX: TRACK ENDING INSTEAD OF SLEEP
-        logger.debug('Sleep 30 minutes')
+        logger.info('Sleep 30 minutes')
         time.sleep(60*30)
 
 
