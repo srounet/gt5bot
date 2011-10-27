@@ -13,6 +13,10 @@ setup(
     maintainer = 'Fabien Reboia',
     license = 'beer-ware',
     url = 'http://github.com/srounet/gt5bot',
+    entry_points = """\
+    [console_scripts]
+    bspec_bot=gt5bot.scripts:bspec_bot
+    """,
     classifiers = [
         "Development Status :: 4 - Beta",
         "Environment :: Console",
