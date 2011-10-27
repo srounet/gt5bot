@@ -1,5 +1,5 @@
 Gran Turismo 5 bot for bspec.
---
+=============================
 
 > **gt5bot** is a command line interpreter (CLI) bot for _Gran turismo 5 Bspec mode_.
 
