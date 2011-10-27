@@ -20,9 +20,9 @@ class InvalidStatus(Exception):
         self.status_ids = status_ids
         self.remote_status_id = remote_status_id
     def __str__(self):
-        required_status_ids = ', '.join(status_ids)
+        required_status_ids = ', '.join(self.status_ids)
         msg = "Required status ids are: %s, actual status id is: %s."
-        return msg % (required_status_ids, remote_status_id)
+        return msg % (required_status_ids, self.remote_status_id)
 
 
 class NotAuthenticated(Exception):
@@ -34,7 +34,7 @@ class BadDriverCount(Exception):
     def __init__(self, driver_count):
         self.driver_count
     def __str__(self):
-        return "Two driver are required, %s active driver(s)" % driver_count
+        return "Two driver are required, %s active driver(s)" % self.driver_count
 
 
 class NoRaceSelected(Exception): pass
