@@ -142,7 +142,7 @@ class Bot(object):
             self.is_loggued = False
         else:
             self.is_loggued = True
-        self.update_profile()
+            self.update_profile()
         return self.is_loggued
 
     @login_required
