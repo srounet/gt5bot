@@ -10,7 +10,9 @@ Because it was borring to repeat again and again the same actions on the remoter
 ###Install
 
 For common users.
+
 > python setup.py install
 
 If you are planning to modify the library for your personnal use.
+
 > python setup.py develop
