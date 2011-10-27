@@ -16,3 +16,10 @@ For common users.
 If you are planning to modify the library for your personnal use.
 
 > python setup.py develop
+
+
+###Usage
+
+> YOU:~$ bspec_bot psn_id psn_password
+
+This will run the bspec bot with **verbose** and **unlimited** race count (the bot will continue to rn until an exception occur).
