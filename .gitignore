@@ -18,6 +18,3 @@ MANIFEST
 dist/*
 build/*
 *.egg-info
-
-#Sc2Gears
-Sc2gears.sh
