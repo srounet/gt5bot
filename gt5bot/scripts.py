@@ -8,7 +8,6 @@ from gt5bot.bot import Bot
 
 def bspec_bot():
     """Bspec script for CLI usage."""
-
     usage = "usage: %prog [options] psn_id psn_password"
     parser = OptionParser(usage=usage)
     parser.add_option('--silent', dest='silent', default=False, help='Disable/enable verbose.')

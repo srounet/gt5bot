@@ -16,7 +16,6 @@ class Browser(object):
 
     def __init__(self):
         """Nothing special, we just need the standard urlib2 opener here."""
-
         self.opener = self._build_opener()
 
     def fetch(self, url, data=None, headers=None):
@@ -28,7 +27,6 @@ class Browser(object):
         data    -- an urlencoded list of values to post
         headers -- a list of key/values to be send as header
         """
-
         request = self._build_request(url, data=data, headers=headers)
         try:
             response = self.opener.open(request)
@@ -40,7 +38,6 @@ class Browser(object):
 
     def _build_opener(self):
         """Create a standard opener for classic web requests."""
-
         opener = urllib2.build_opener()
         return opener
 
@@ -52,7 +49,6 @@ class Browser(object):
         data    -- an urlencoded list of values to post
         headers -- a list of key/values to be send as header
         """
-
         request = urllib2.Request(url, data, headers or {})
         return request
 
@@ -63,7 +59,6 @@ class BrowserWithCookies(Browser):
     Session information can thus be updated and sent to the destination from
     request to request.
     """
-
     def _build_opener(self):
         """Append a cookie processor to the opener."""
         opener = Browser._build_opener(self)
